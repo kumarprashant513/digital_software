@@ -1395,12 +1395,10 @@ app.delete('/api/admin/chats/:userId', authenticateToken, authenticateAdmin, asy
 });
 
 
-// Serve frontend from frontend/dist
-app.use(express.static(path.join(__dirname, 'dist')));
 
 // Handle all other routes by sending index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
