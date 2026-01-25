@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 // --- Configuration ---
 const FRONTEND_DOMAINS = [
-  "https://nexverra.in", "https://localhost:10000",
+  "https://nexverra.in", "https://localhost:5000",
   "https://nexverra.up.railway.app/"
 ];
 
